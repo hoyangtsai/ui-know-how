@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>UI Snippets - Demo</title>
+
+<style type="text/css">
+    .angle-arrow {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-right: 4px solid #000;
+        border-bottom: 4px solid #000;
+        transform: rotate(45deg);
+        transform-origin: right bottom;
+    }
+
+    .triangle-right {
+        width: 0;
+        height: 0;
+        position: relative;
+        border-left: 40px solid #007bff;
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+    }
+    .triangle-right:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 3px;
+        top: -60px;
+        border-left: 40px solid #fff;
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+    }
+
+    .triangle-top {
+        width: 0;
+        height: 0;
+        position: relative;
+        border-bottom: 40px solid #007bff;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+    }
+    .triangle-top:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 3px;
+        left: -60px;
+        border-bottom: 40px solid #fff;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+    }
+
+    .triangle-bottom {
+        width: 0;
+        height: 0;
+        position: relative;
+        border-top: 40px solid #007bff;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+    }
+    .triangle-bottom:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 3px;
+        left: -60px;
+        border-top: 40px solid #fff;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+    }
+    .triangle-left {
+        width: 0;
+        height: 0;
+        position: relative;
+        border-right: 40px solid #007bff;
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+    }
+    .triangle-left:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 3px;
+        top: -60px;
+        border-right: 40px solid #fff;
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+    }
+</style>
+</head>
+<body>
+    <div class="angle-arrow down"></div>
+
+    <div class="triangle-top"></div>
+    <div class="triangle-right"></div>
+    <div class="triangle-bottom"></div>
+    <div class="triangle-left"></div>
+</body>
+</html>

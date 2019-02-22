@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>UI Snippets</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css"> -->
+    <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/buble.css"> -->
+    <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/dark.css"> -->
+    <link rel="stylesheet" href="./style/theme-simple.css">
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+      var base = window.location.host.match(/(127|local+.)/) ?
+        '/' : window.location.href;
+
+      window.$docsify = {
+          name: 'UI Know-how',
+          el: '#app',
+          auto2top: true,
+          basePath: window.location.origin + window.location.pathname.replace(/index\.html$/, ''),
+          // basePath: 'http://wapstatic.sparta.html5.qq.com/keithytsai/ui-snippets/',
+          loadSidebar: true,
+          subMaxLevel: 4,
+          alias: {
+              '/.*/README.md': 'README.md',
+              '/.*/_sidebar.md': '_sidebar.md'
+          },
+          // complete configuration parameters
+          search: {
+            maxAge: 86400000, // Expiration time, the default one day
+            // Localization
+            placeholder: {
+              '/zh-cn/': '搜索',
+              '/': 'Type to search'
+            },
+            // Localization
+            noData: {
+              '/zh-cn/': '找不到结果',
+              '/': 'No Results'
+            },
+            // Headline depth, 1 - 6
+            depth: 6,
+            hideOtherSidebarContent: true, // whether or not to hide other sidebar content
+          }
+      }
+    </script>
+    <script src="./script/docsify.min.js"></script>
+    <script src="./script/search.min.js"></script>
+    <script src="./script/external-script.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-scss.min.js"></script>
+</body>
+</html>

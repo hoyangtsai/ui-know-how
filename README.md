@@ -1,3 +1,2 @@
-# UI Snippets
+# Initial page
 
-一些重構經驗沈澱的筆記

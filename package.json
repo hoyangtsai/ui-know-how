@@ -4,6 +4,8 @@
   "description": "ui snippets documentation",
   "main": "index.js",
   "scripts": {
+    "dev": "docsify serve site",
+    "build": "docsify generate site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +25,7 @@
   "homepage": "https://github.com/hoyangtsai/ui-snippets#readme",
   "dependencies": {
     "del": "^3.0.0",
+    "docsify-cli": "^4.4.3",
     "gulp": "^3.9.1",
     "gulp-file-post": "^1.2.2",
     "gulp-zip": "^4.2.0"
